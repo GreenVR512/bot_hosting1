@@ -1,16 +1,26 @@
 {
   "name": "bot-hosting",
   "version": "1.0.0",
-  "description": "Mineflayer Bot Host",
+  "description": "Mineflayer Bot and Web Server Host",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --check index.js && node --check bot.js && node --check server.js"
   },
+  "keywords": [
+    "mineflayer",
+    "bot",
+    "render",
+    "minecraft"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "engines": {
     "node": "20.x"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "mineflayer": "^4.20.1"
+    "express": "^4.22.2",
+    "mineflayer": "^4.37.1"
   }
 }
