@@ -1,17 +1,16 @@
 {
-  "name": "workspace",
+  "name": "bot-hosting",
   "version": "1.0.0",
-  "description": "",
-  "main": "public/index.js",
+  "description": "Mineflayer Bot Host",
+  "main": "index.js",
   "scripts": {
-    "start": "node public/index.js",
-    "test": "node --check public/index.js && node --check public/bot.js && node --check public/server.js"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
-    "mineflayer": "^4.37.1"
+    "express": "^4.19.2",
+    "mineflayer": "^4.20.1"
   }
 }
